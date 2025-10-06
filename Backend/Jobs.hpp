@@ -138,7 +138,7 @@ public:
 
 class Alien : public Job {
 public:
-    Alien() : Job("Alien", 150, "Divide and Conquer", "Multiply money by 1.1 through special alien techniques", 5) {}
+    Alien() : Job("Alien from Kepler-22b", 150, "Divide and Conquer", "Multiply money by 1.1 through special alien techniques", 5) {}
 };
 
 class Teacher : public Job {

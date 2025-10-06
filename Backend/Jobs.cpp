@@ -13,9 +13,9 @@ int Job::randomIncomeValue() {
     constexpr int maxIncome = 400;
     constexpr int increment = 10;
 
-    static std::random_device rd;
-    static std::mt19937 gen(rd());
-    std::normal_distribution<> dist(mean, stddev);
+    static random_device rd;
+    static mt19937 gen(rd());
+    normal_distribution<> dist(mean, stddev);
 
     int salary;
     while (true) {

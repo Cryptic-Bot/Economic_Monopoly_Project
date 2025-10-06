@@ -118,21 +118,12 @@ public:
 };
 
 // Implementation notes:
-//
-// - The property market (averagePropertyPrice and propertyPriceIndex) responds
-//   to GDP, business confidence, interest rates, inflation, and events such as
-//   housing bubble or trade wars.
-// - Construction costs (constructionCostIndex) reflect inflation measures (especially PPI),
-//   supply chain disruptions, and Fed policy influencing borrowing costs.
-// - Player income is adjusted from a base income (per job class) by inflation (CPI mainly)
-//   and potentially other factors like unemployment or economic booms.
-// - Inflation components (CPI, PPI, GDP deflator) allow nuanced modeling: CPI affects consumer prices
-//   and player income, PPI affects production/construction costs, GDP deflator ties to overall
-//   price level changes in GDP.
-// - Ripple effects maintain realistic macroeconomic linkages; e.g., rising interest rates may
-//   depress investment and property prices, raising unemployment.
-// - This design facilitates integrating macroeconomic dynamics into Monopoly gameplay,
-//   affecting players' financial decisions, property values, and building strategies.
+
+// - The property market (averagePropertyPrice and propertyPriceIndex) responds to GDP, business confidence, interest rates, inflation, etc
+// - Construction costs (constructionCostIndex) reflect inflation measures, supply chain disruptions, and Fed policy influencing borrowing costs.
+// - Player income is adjusted from a base income (per job class) by inflation (CPI mainly) and potentially other factors like unemployment or economic booms.
+// - Inflation components (CPI, PPI, GDP deflator): CPI affects consumer prices and player income, PPI affects production/construction costs, GDP deflator ties to overall price level changes in GDP.
+// - Ripple effects => realistic ish macro; e.g., rising interest rates may depress investment and property prices, raising unemployment.
 
 struct MonopolyInfo {
     string sector;

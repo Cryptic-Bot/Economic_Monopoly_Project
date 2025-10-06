@@ -22,7 +22,7 @@ class Player;
 class Economy;
 class Property;
 
-// ----- Player class -----
+// Player Class
 // Represents a player with name, job title, cash balance, and loans
 class Player {
 private:

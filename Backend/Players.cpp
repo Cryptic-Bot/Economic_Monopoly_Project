@@ -7,7 +7,7 @@
 
 #include "Players.hpp"
 
-// ----- Loan class -----
+// Loan Class
 // Represents a private loan between players, with principal, interest rate, turns left, and creditor reference
 //class Loan {
 //private:

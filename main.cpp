@@ -32,42 +32,10 @@ int main() {
     return 0;
 }
 
-// Add trolling
-// Add cussing mode or pro cussing responses
-// Job paths? Choose or random? random, choice or choice name/random cash
 
-
-// turn based
-// income for passing go
-// random event timer
-
-// Example driver to demonstrate setup and usage
-//int main() {
-//    // Economy setup
-//    Economy economy;
-//    economy.triggerEvent(Economy::BOOM);
-//
-//    // Assign jobs
-//    alice.setJobTitle("Banker");
-//    bob.setJobTitle("Lawyer");
-//
-//    // Alice loans Bob $300 with 5% interest for 3 turns
-//    Loan loan(300, economy.getInterestRate(), 3, &alice);
-//    bob.addLoan(loan);
-//
-//    // Display initial status
-//    alice.displayStatus();
-//    bob.displayStatus();
-//    std::cout << "\n-- End Turn 1 --\n";
-//    
-//    // Bob pays interest to Alice
-//    bob.processLoans(alice);
-//
-//    // Display status after one turn
-//    alice.displayStatus();
-//    bob.displayStatus();
-//
-//    return 0;
-//}
+// Implementation Notes:
+// - turn based
+// - income for passing go
+// - random event timer
 
 

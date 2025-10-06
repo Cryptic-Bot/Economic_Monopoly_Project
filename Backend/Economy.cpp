@@ -9,12 +9,10 @@
 #include <iostream>
 #include <cmath>
 
-// ================== EXTERN GLOBALS ==================
-
 std::map<int, std::map<std::string, double>> playerMarketShare;
 std::vector<MonopolyInfo> monopolySectors;
 
-// ================== ECONOMY METHODS ==================
+// Economy Functions
 
 Economy::Economy() {
     std::random_device rd;
@@ -178,7 +176,7 @@ std::string Economy::selectWeightedRandomEvent() {
     return adjusted.begin()->first;
 }
 
-// ================== EVENT HANDLERS ==================
+// Events
 
 void Economy::consumerConfidenceBoom() {
     double change = randomDouble(-15, 15);

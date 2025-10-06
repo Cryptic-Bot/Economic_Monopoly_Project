@@ -118,9 +118,6 @@ std::string centerText(const std::string& text, int width) {
     return std::string(padLeft, ' ') + text + std::string(padRight, ' ');
 }
 
-// ---- Turn banners (safe for any input length) ----
-
-// Display the current global turn, boxed
 void GameUI::displayGlobalTurn(GameManager& game) {
     const int WIDTH = 44; // total line width to match your example
     std::string headline = "Turn " + std::to_string(game.accessGlobalTurns());
@@ -129,7 +126,6 @@ void GameUI::displayGlobalTurn(GameManager& game) {
     std::cout << std::string(WIDTH, '-') << std::endl;
 }
 
-// Display the current player's turn, boxed
 void GameUI::displayPlayerTurn(GameManager& game, const vector<Player>& vec) {
     const int WIDTH = 44;
     int playerIdx = game.accessnPlayersGone();
